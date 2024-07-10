@@ -1,0 +1,145 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(bisque, black);
+}
+.circle{
+    width: 5px;
+    height: 5px;
+    background: radial-gradient(pink, rgb(106, 60, 60));
+    border:20px solid black;
+    box-shadow: 0px 0px 185px gray;
+    border-radius: 50%;
+    position: relative;
+    transition: all 2s ease-in 1s;
+}
+.circle div{
+    font-size: 25px;
+}
+.one{
+        position: absolute;
+        top: 2px;
+        left: 49%;
+}
+.two{
+    position: absolute;
+    bottom: 2px;
+    left: 49%;
+}
+.three{
+    position: absolute;
+    top: 49%;
+    right: 2px;
+}
+.four{
+    position: absolute;
+    top: 49%;
+    left: 2px;
+}
+.five{
+    position: absolute;
+    top: 30px;
+    right: 83px;
+}
+.six{
+    position: absolute;
+    top: 30px;
+    left: 83px;
+}
+.seven{
+    position: absolute;
+    bottom: 30px;
+    right: 83px;
+}
+.eight{
+    position: absolute;
+    bottom: 30px;
+    left: 83px;
+}
+.nine{
+    position: absolute;
+    top: 102px;
+    right: 27px;
+}.ten{
+    position: absolute;
+    top: 102px;
+    left: 27px;
+}.eleven{
+    position: absolute;
+    bottom: 102px;
+    right: 27px;
+}.twel{
+    position: absolute;
+    bottom: 102px;
+    left: 27px;
+}
+.sma{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+}
+.sec{
+    width: 2px;
+    height: 150px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    animation: sec 60s infinite;
+}
+@keyframes sec{
+    from{
+        transform: rotate(0deg) translatey(-75px);
+    }
+    to{
+        transform: rotate(360deg) translatey(-75px);
+    }
+}
+.min{
+    width: 4px;
+    height: 150px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    animation: sec 360s infinite;
+}
+@keyframes min{
+    from{
+        transform: rotate(0deg) translatey(-75px);
+    }
+    to{
+        transform: rotate(360deg) translatey(-75px);
+    }
+}
+.hour{
+    width: 6px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    animation: hour 21600s infinite;
+}
+@keyframes hour{
+    from{
+        transform: rotate(0deg) translatey(-50px);
+    }
+    to{
+        transform: rotate(360deg) translatey(-50px);
+    }
+}
+.circle:hover{
+    width:400px;
+    height:400px;
+    border-radius: 50%;
+    background:linear-gradient(grey,white);
+}
