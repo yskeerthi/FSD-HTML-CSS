@@ -1,0 +1,73 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.parent {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-vector/night-sky-with-stars_1048-7871.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1714953600&semt=ais);
+}
+
+.d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child1 {
+    width: 200px;
+    height: 200px;
+    background-image: url(./earth-removebg-preview.png);
+    /* background-clip: border-box;  */
+    background-size: 100% 100%;
+    background-clip: cover;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate-earth 3s infinite linear;
+    transform-origin: center;
+}
+
+@keyframes rotate-earth {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.orbit {
+    width: 900px;
+    height: 770px;
+    border: 2px solid orange;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child2 {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    background-image: url(moon.jpeg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    animation: my_animation 3s infinite linear;
+}
+
+@keyframes my_animation {
+    0% {
+        transform: rotate(0deg) translate(300px, 300px);
+    }
+    100% {
+        transform: rotate(360deg) translate(300px, 300px);
+    }
+}
